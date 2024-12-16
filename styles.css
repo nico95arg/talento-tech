@@ -178,3 +178,21 @@ form button:hover {
   text-align: center;
 }
 
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.redes-sociales a img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.2s ease;
+}
+
+.redes-sociales a img:hover {
+  transform: scale(1.1);
+}
+
+
