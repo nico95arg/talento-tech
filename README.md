@@ -1,12 +1,25 @@
 # Mi Página Web
 
 ## Propósito
-Esta página web fue diseñada como un proyecto educativo para aprender las bases del desarrollo web. Incluye HTML semántico, CSS responsivo, y un formulario funcional con Formspree.
+El objetivo de esta página web es proporcionar una plataforma intuitiva y atractiva para mostrar y vender dispositivos móviles. Está diseñada para ser fácil de usar, tanto para los visitantes que buscan información sobre los productos como para quienes desean ponerse en contacto con la tienda.
 
 ## Funcionalidades
-- **Formulario de Contacto**: Permite a los usuarios enviar consultas fácilmente.
-- **Sección de Productos**: Visualización dinámica y responsiva de productos.
-- **Diseño Responsivo**: Se adapta a distintos dispositivos usando Flexbox y Grid.
+Página de Inicio:
+.Introducción a la tienda con un diseño llamativo.
+.Acceso directo a las secciones de productos y contacto.
+Catálogo de Productos:
+.Muestra diferentes modelos de celulares con imágenes y descripciones.
+.Botones interactivos para ver más detalles o simular una compra.
+Formulario de Contacto:
+.Los usuarios pueden completar un formulario para realizar consultas o solicitar información.
+.Diseño intuitivo y validación básica.
+Enlaces a Redes Sociales:
+.Acceso directo a las redes sociales oficiales (Instagram y Facebook).
+.Iconos dinámicos y atractivos para una mejor experiencia visual.
+Responsividad:
+Diseño adaptable a cualquier tipo de dispositivo, desde móviles hasta escritorios.
+Uso de flexbox y media queries para una experiencia consistente.
+
 
 ## Cómo Ejecutar
 1. Descarga el proyecto.

@@ -1,12 +1,13 @@
-
+/* General */
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color:#eed09d  ;
+  background-color: #eed09d;
 }
 
+/* Header */
 header {
   background-color: #333;
   color: white;
@@ -28,42 +29,15 @@ nav a {
   font-weight: bold;
 }
 
+/* Secciones generales */
 section {
   padding: 20px;
   text-align: center;
 }
 
+/* Productos */
 .producto-card {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 15px;
-  margin: 10px auto;
-  max-width: 300px;
-}
-
-button {
-  background-color: #007BFF;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  cursor: pointer;
-  border-radius: 5px;
-  margin-top: 10px;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
-
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
-}
-
-.producto-card {
-  position: relative; 
+  position: relative;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 15px;
@@ -77,7 +51,7 @@ footer {
   height: auto;
   margin-bottom: 10px;
   border-radius: 8px;
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 .descripcion {
@@ -89,10 +63,11 @@ footer {
   color: white;
   padding: 10px;
   border-radius: 8px;
-  display: none; 
-  z-index: 10; 
+  display: none;
+  z-index: 10;
 }
 
+/* Botones */
 button {
   background-color: #007BFF;
   color: white;
@@ -107,7 +82,7 @@ button:hover {
   background-color: #0056b3;
 }
 
-/* Estilo del formulario */
+/* Formulario */
 form {
   max-width: 600px;
   margin: 0 auto;
@@ -159,25 +134,7 @@ form button:hover {
   background: linear-gradient(45deg, #2575fc, #6a11cb);
 }
 
-
-  .productos-container {
-    flex-direction: column;
-  }
-
-
-.productos-container {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.card {
-  flex: 1 1 calc(50% - 1rem);
-  padding: 1rem;
-  border-radius: 8px;
-  text-align: center;
-}
-
+/* Redes Sociales */
 .redes-sociales {
   display: flex;
   justify-content: center;
@@ -195,4 +152,80 @@ form button:hover {
   transform: scale(1.1);
 }
 
+/* Flexbox para productos */
+.productos-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  flex: 1 1 calc(50% - 1rem);
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Media Queries */
+
+/* Pantallas pequeñas (teléfonos) */
+@media (max-width: 768px) {
+  .productos-container {
+    flex-direction: column;
+  }
+
+  .producto-card {
+    max-width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav a {
+    font-size: 1rem;
+  }
+
+  form {
+    padding: 1rem;
+  }
+}
+
+/* Pantallas medianas (tabletas) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .productos-container {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .card {
+    flex: 1 1 calc(45% - 1rem);
+  }
+
+  form {
+    padding: 1.2rem;
+  }
+}
+
+/* Pantallas grandes (escritorios) */
+@media (min-width: 1025px) {
+  .productos-container {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  .card {
+    flex: 1 1 calc(30% - 1rem);
+  }
+}
 
