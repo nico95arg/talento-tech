@@ -3,40 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inicio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>Tienda de Celulares</title>
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+
   <header>
-    <h1>Inicio</h1>
+    <h1>Tienda de Celulares</h1>
     <nav>
       <ul>
         <li><a href="./pages/inicio.html">Inicio</a></li>
         <li><a href="./pages/productos.html">Productos</a></li>
-        <li><a href="./pages/reseñas.html">Reseñas</a></li>
         <li><a href="./pages/contacto.html">Contacto</a></li>
       </ul>
     </nav>
+    
+    
   </header>
 
-  <main>
-    <h2>Bienvenido a la página de inicio</h2>
-    <p>Esta es una breve introducción al sitio web.</p>
+  <!-- Sección Inicio -->
+  <section id="inicio">
+    <h2>Bienvenidos a la Tienda de Celulares</h2>
+    <p>Encuentra los mejores smartphones a los mejores precios.</p>
     <iframe 
-        width="560" 
-        height="315" 
-        src="https://www.youtube.com/embed/E5AoCpj2v5c" 
-        title="Video de YouTube" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
+      width="560" 
+      height="315" 
+      src="https://www.youtube.com/embed/E5AoCpj2v5c" 
+      title="Video de bienvenida" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen>
     </iframe>
-     
-  </main>
+  </section>
+
+  <!-- Sección de Productos -->
+  <section id="productos">
+    <h2>Nuestros Productos</h2>
+    <div class="producto-card" data-id="1">
+      <div class="descripcion" style="display: none;">Samsung Galaxy A54 - Un excelente smartphone con gran rendimiento.</div>
+      <img src="assets/images/producto1.jpg" alt="Samsung Galaxy A54" class="producto-imagen">
+      <h3>Samsung Galaxy A54</h3>
+      <p>Precio: $400</p>
+      <button class="ver-mas">Ver más</button>
+      <button class="agregar-carrito">Agregar al Carrito</button>
+    </div>
+    <div class="producto-card" data-id="2">
+      <div class="descripcion" style="display: none;">iPhone 15 - La última innovación de Apple con tecnología de punta.</div>
+      <img src="assets/images/producto2.jpeg" alt="iPhone 15" class="producto-imagen">
+      <h3>iPhone 15</h3>
+      <p>Precio: $1,000</p>
+      <button class="ver-mas">Ver más</button>
+      <button class="agregar-carrito">Agregar al Carrito</button>
+    </div>
+    <div class="producto-card" data-id="3">
+      <div class="descripcion" style="display: none;">Xiaomi Redmi Note 12 - Calidad y precio accesible en un solo teléfono.</div>
+      <img src="assets/images/producto1.jpg" alt="Xiaomi Redmi Note 12" class="producto-imagen">
+      <h3>Xiaomi Redmi Note 12</h3>
+      <p>Precio: $350</p>
+      <button class="ver-mas">Ver más</button>
+      <button class="agregar-carrito">Agregar al Carrito</button>
+    </div>
+  </section>
+
+  <!-- Carrito de Compras -->
+  <section id="carrito">
+    <h2>Carrito de Compras</h2>
+    <ul id="lista-carrito">
+      <!-- Productos dinámicos -->
+    </ul>
+    <p id="total-carrito">Total: $0</p>
+    <button id="vaciar-carrito">Vaciar Carrito</button>
+    <button id="checkout">Finalizar Compra</button>
+  </section>
+
 
   <footer>
-    <p>© 2024 Mi Página Web. Todos los derechos reservados.</p>
+    <p>© 2024 Tienda de Celulares. Todos los derechos reservados.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
+
